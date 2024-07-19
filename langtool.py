@@ -25,7 +25,6 @@ if __name__ == '__main__':
     list_encodings_subparser = subparsers.add_parser('list-encodings', help='List available encodings.')
 
     args = parser.parse_args()
-    print(args)
 
     encodings = [m.name for m in iter_modules(langtool.encodings.__path__)]
 
