@@ -1,13 +1,17 @@
 # Mario Party 8 RE and Language Tools
 
+**Important: Everything in this repository is unofficial - not in any way endorsed by the developers of the games in
+question. All reverse engineering is done from a game for which I own a physical copy.**
+
 The scripts in this repository can be used to convert Mario Party 8's language data ("mess" files) to and from a more
 human-readable JSON format.
 
 Note that these scripts assume the US english-release character set is being used, so some adjustments will be needed
 for certain accented characters which appear in other language versions to work correctly.
 
-This tool also seems to work with Mario Party 7 message files, though it's possible that
-some of the special character mappings will not line up properly.
+This tool also works with Mario Party 7, 6, and 5 message files, though it's possible that
+some of the special character mappings will not line up properly. Mario Party 4's message file format also appears to be
+rather similar - though not compatible with these tools, they may serve as useful reference.
 
 
 ## Usage
