@@ -1,4 +1,4 @@
-
+"""Mario Party 8 English Encoding Map"""
 translation_map = [
     (b'_', b'/'),
     (b'\x0E\x0D', b'{ICON_MINUS}'),
@@ -30,7 +30,7 @@ translation_map = [
     (b'\\', b'\''),
     (b'=', b'-'),
     (b'\xC2', b'!'),
-    (b'\xC3', b'?'),  # US version only
+    (b'\xC3', b'?'),
     (b'\x82', b','),
     (b'\xFF', b'{WAIT_A_PRESS}'),
     (b'\x1B', b'\t'),

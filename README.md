@@ -4,27 +4,33 @@
 question. All reverse engineering is done from a game for which I own a physical copy.**
 
 The scripts in this repository can be used to convert Mario Party 8's language data ("mess" files) to and from a more
-human-readable JSON format.
-
-Note that these scripts assume the US english-release character set is being used, so some adjustments will be needed
-for certain accented characters which appear in other language versions to work correctly.
-
-This tool also works with Mario Party 7, 6, and 5 message files, though it's possible that
-some of the special character mappings will not line up properly. Mario Party 4's message file format also appears to be
-rather similar - though not compatible with these tools, they may serve as useful reference.
+human-readable JSON format. Mario Party 5, 6, and 7 are also supported.
 
 
 ## Usage
 
-To convert message data to JSON:
- - Place the source file in this directory, named `messdata_eng.bin`.
- - Run `lang_unpack.py`.
- - The output JSON will be placed in `messdata_eng.json`.
+Use `langtool.py` for conversion to and from JSON.
 
-To convert back to the original binary format:
- - Edit `messdata_eng.json` as desired.
- - Run `lang_pack.py`.
- - The output data will be placed in `messdata_eng_out.bin`.
+**To convert from bin to JSON, run:**
+
+```bash
+python3 langtool.py decode messdata_eng.bin messdata_eng.json
+```
+
+Where `messdata_eng.bin` is your input file, and `messdata_eng.json` is your output file.
+
+**To convert back to bin, run:**
+
+```
+python3 langtool.py encode messdata_eng.json messdata_eng.bin
+```
+
+Where `messdata_eng.json` is your input file, and `messdata_eng.bin` is your output file.
+
+By default, the Mario Party 8 English encoding map is used.
+Pass the `-e [encoding_name]` argument *before* specifying the encode/decode action in order to
+select an alternative encoding format. These are listed in the `langtool/encodings` directory,
+and contributions are welcome.
 
 **Important:** Do not rearrange, add or remove sections or strings from the JSON file.
 Mario Party 8 depends on these strings to be in the specific order they appear in.
