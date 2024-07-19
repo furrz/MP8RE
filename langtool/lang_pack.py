@@ -6,7 +6,7 @@ from langtool.alignment import align
 
 def detranslate(string, translation_map):
     string = string.encode("ascii", errors="ignore")
-    for (to, original) in translation_map:
+    for (to, original) in reversed(translation_map):
         string = string.replace(original, to)
     return string
 
