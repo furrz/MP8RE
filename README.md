@@ -6,6 +6,10 @@ human-readable JSON format.
 Note that these scripts assume the US english-release character set is being used, so some adjustments will be needed
 for certain accented characters which appear in other language versions to work correctly.
 
+This tool also seems to work with Mario Party 7 message files, though it's possible that
+some of the special character mappings will not line up properly.
+
+
 ## Usage
 
 To convert message data to JSON:
