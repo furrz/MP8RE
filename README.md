@@ -58,11 +58,8 @@ Here are the symbols and their meanings:
 - `{COLOUR_CYAN}`: Sets the text colour to cyan.
 - `{COLOUR_GREEN}`: Sets the text colour to green.
 - `{COLOUR_RESET}`: Sets the text colour back to the default white.
-- `{DLG_START_1C05}`: Odd byte sequences sometimes seen at the start of dialogue lines. Unknown purpose.
-- `{DLG_START_1C07}`: Odd byte sequences sometimes seen at the start of dialogue lines. Unknown purpose.
-- `{DLG_START_1C09}`: Odd byte sequences sometimes seen at the start of dialogue lines. Unknown purpose.
-- `{DLG_START_1C0A}`: Odd byte sequences sometimes seen at the start of dialogue lines. Unknown purpose.
-- `{STR_PARAM_1}`: A string parameter substituted by the game at runtime.
+- `{SFX_##}`: Where ## is a 2-digit hex number in all-caps. Triggers a voice line. See the language file for specific audio transcriptions.
+- `{STR_PARAM_#}`: Where # is 1 through 4. A string parameter substituted by the game at runtime.
 - `{NUM_PARAM_1}`: A numerical parameter substituted by the game at runtime. If, immediately after this, you include a space and one of these words, it will be dynamically made plural when the number is not 1:
   - `coin` / `Coin`
   - `star` / `Star`
@@ -86,6 +83,7 @@ Here are the symbols and their meanings:
   - Other words containing characters unavailable in the English encoding have been excluded from this list.
 - `{RIGHT_ARROW}`: A right arrow.
 - `{ICON_}`: The icon prefix byte, used when the next byte is not recognized in this list yet as a real icon.
+- `{SFX_}`: The sfx prefix byte, used when the next byte is not recognized in this list yet as a real voice line.
 - `{BTN_START}`: Signifies the beginning of the text for an on-screen button. Often appears in pairs, e.g. Yes / No buttons.
 - `{BTN_START_ALT}`: An alternative to `{BTN_START}`, for unknown reasons.
 - `{BTN_END}`: Signifies the end of the text for an on-screen button.
