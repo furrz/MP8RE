@@ -12,9 +12,9 @@ translation_map = [
     (b'\x0E\x08', b'{ICON_A_BUTTON}'),
     (b'\x0E\x09', b'{ICON_B_BUTTON}'),
     (b'\x0E\x07', b'{ICON_WIIMOTE}'),
-    (b'\x1E\x07',  b'{COLOUR_YELLOW}'),
-    (b'\x1E\x06',  b'{COLOUR_CYAN}'),
-    (b'\x1E\x05',  b'{COLOUR_GREEN}'),
+    (b'\x1E\x07', b'{COLOUR_YELLOW}'),
+    (b'\x1E\x06', b'{COLOUR_CYAN}'),
+    (b'\x1E\x05', b'{COLOUR_GREEN}'),
     (b'\x1E\x08', b'{COLOUR_RESET}'),
     (b'\x1C\x02', b'{SFX_01}'),  # Ballyhoo: 'Hi!'
     (b'\x1C\x02', b'{SFX_02}'),  # Ballyhoo: 'Howdy!'
