@@ -9,6 +9,10 @@ human-readable JSON format. Mario Party 5, 6, and 7 are also supported.
 
 ## Usage
 
+If you don't yet have a copy of the language data files for the game, you will need to extract them.
+Using the Dolphin emulator or a similar tool, extract the game files, and look in the `mess` directory for message data
+.bin files.
+
 Use `langtool.py` for conversion to and from JSON.
 
 **To convert from bin to JSON, run:**
